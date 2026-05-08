@@ -1,0 +1,85 @@
+Tf-IDF :
+TF-IDF converts text into numbers based on importance of words in a document.
+TF (Term Frequency): how often a word appears in a document
+IDF (Inverse Document Frequency): how rare the word is across documents
+
+POS tagging:
+Identifying Grammatical role of each word in sentence
+
+Stemming:
+reduces word to their root form by cutting the suffixes(may not be proper word)
+
+Lemmatization:
+reduces word to their root form but gives meaningful dictionary word
+
+Linear Regression:
+Linear Regression is a supervised machine learning algorithm used to predict a continuous value (like marks, salary, price) based on input features.
+Working: 
+1. Take input data (X) and output (Y)
+2. Assume a straight line: y = mx + c
+3. Predict values using this line
+4. Calculate error between actual and predicted values
+5. Adjust m (slope) and c (intercept) to reduce error
+6. Repeat until error becomes minimum
+7. Final line is used for prediction
+
+Logistic Regression:
+Logistic Regression is a supervised machine learning algorithm used for classification problems, not regression.
+It predicts probability (0 to 1) and then classifies.
+Working:
+Take input data (X, Y)
+Apply linear equation: z = mx + c
+Convert z into probability using sigmoid: sigma(z)=1/1+e^-z
+If probability ≥ 0.5 → class = 1, else → class = 0
+Compare prediction with actual output (error)
+Update weights using gradient descent
+Repeat until error becomes minimum
+
+Naive Bayes:
+Naive Bayes is a supervised machine learning algorithm used for classification problems.
+It is based on Bayes Theorem and assumes that all features are independent of each other.
+Working:
+1. Take training data (features + class)
+2. Calculate probability of each class
+3. Calculate probability of features for each class
+4. Apply Bayes theorem: 
+      P(A|B) = P(B|A).P(A) / P(B)
+5. Multiply probabilities of all features (assuming independence)
+6. Compare final probabilities of all classes
+7. Choose class with highest probability as output
+
+
+
+Supervised and unsupervised learning:
+Supervised learning is a type of machine learning where the model is trained using labeled data.
+
+Unsupervised learning is a type of machine learning where the model is trained using unlabeled data.
+
+how TF is Calculated?
+TF (Term Frequency) is calculated as:
+  TF = Total words in document / Number of times a word appears
+
+A Confusion Matrix is a table used to check the performance of a classification model.
+It compares:Actual values , Predicted values
+|            | Predicted Yes       | Predicted No        |
+| ---------- | ------------------- | ------------------- |
+| Actual Yes | True Positive (TP)  | False Negative (FN) |
+| Actual No  | False Positive (FP) | True Negative (TN)  |
+
+In Confusion Matrix:
+TP (True Positive):When the model predicts Positive and the actual answer is also Positive.
+FP (False Positive):When the model predicts Positive, but the actual answer is Negative.
+
+1. Accuracy: Accuracy tells how many predictions are correct out of total predictions.
+      Accuracy = TP+TN / TP+TN+FP+FN
+2. Precision:Precision tells how many predicted positives are actually positive.
+      Precision = TP / TP+FP 
+3. Recall: Recall tells how many actual positives are correctly identified.
+      Recall = TP / TP+FN
+4. Error rate: Error rate tells how many predictions are wrong.
+      Error Rate = FP+FN / TP+TN+FP+FN
+
+	​
+1. Mean Absolute Error : MAE calculates the average absolute difference between actual and predicted values.
+2. Root Mean Squared Error (RMSE) : RMSE calculates square root of average squared errors.
+3. R² Score (Coefficient of Determination) : R² score tells how well the model fits the data.
